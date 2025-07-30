@@ -12,10 +12,10 @@ public class AuthResponse {
     private String message;
     private USER_ROLE userRole;
 
-    public static AuthResponse buildAuthResponse(String jwt, USER_ROLE userRole) {
+    public static AuthResponse buildAuthResponse(String jwt, String message, USER_ROLE userRole) {
         return AuthResponse.builder()
                 .jwt(jwt)
-                .message("Register success!!!")
+                .message(message)
                 .userRole(userRole)
                 .build();
     }

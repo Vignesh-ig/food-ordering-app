@@ -63,12 +63,7 @@ public class AuthController {
         SecurityContextHolder.getContext().setAuthentication(authentication);
 
         String jwt = jwtProvider.generateToken(authentication);
-
-        AuthResponse authResponse = buildAuthResponse(jwt, saveUser.getRole());
-
-        System.out.println("ROLE: " + saveUser.getRole());
-        System.out.println("ROLE: " + request.userRole());
-        System.out.println("AuthResponse: " + authResponse);
+        AuthResponse authResponse = buildAuthResponse(jwt, "Register success!!!",saveUser.getRole());
 
         return new ResponseEntity<>(authResponse, HttpStatus.CREATED);
     }
@@ -87,7 +82,7 @@ public class AuthController {
 
         String jwt = jwtProvider.generateToken(authentication);
 
-        AuthResponse authResponse = buildAuthResponse(jwt, USER_ROLE.valueOf(userRole));
+        AuthResponse authResponse = buildAuthResponse(jwt, "!!!Login success!!!",USER_ROLE.valueOf(userRole));
 
         return new ResponseEntity<>(authResponse, HttpStatus.OK);
     }
