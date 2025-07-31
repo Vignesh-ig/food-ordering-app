@@ -1,7 +1,7 @@
-package com.order.controller;
+package com.order.module.user.controller;
 
-import com.order.Service.UserService;
-import com.order.module.User;
+import com.order.module.user.service.UserService;
+import com.order.module.user.entity.User;
 import jakarta.validation.constraints.NotBlank;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

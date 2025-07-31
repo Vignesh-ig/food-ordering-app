@@ -1,6 +1,6 @@
-package com.order.Service;
+package com.order.module.user.service;
 
-import com.order.module.User;
+import com.order.module.user.entity.User;
 
 public interface UserService {
 

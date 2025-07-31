@@ -1,14 +1,12 @@
-package com.order.Service;
+package com.order.module.user.service.impl;
 
 import com.order.config.JwtProvider;
-import com.order.module.User;
-import com.order.repository.UserRepository;
+import com.order.module.user.entity.User;
+import com.order.module.user.service.UserService;
+import com.order.module.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
-
-import java.util.Optional;
 
 @Slf4j
 @Service
