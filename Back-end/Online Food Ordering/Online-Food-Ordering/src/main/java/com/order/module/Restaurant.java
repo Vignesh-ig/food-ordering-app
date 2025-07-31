@@ -1,6 +1,7 @@
 package com.order.module;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.order.module.user.entity.User;
 import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Data;

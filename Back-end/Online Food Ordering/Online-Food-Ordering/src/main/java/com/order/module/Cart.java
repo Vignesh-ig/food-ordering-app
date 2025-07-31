@@ -1,5 +1,6 @@
 package com.order.module;
 
+import com.order.module.user.entity.User;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

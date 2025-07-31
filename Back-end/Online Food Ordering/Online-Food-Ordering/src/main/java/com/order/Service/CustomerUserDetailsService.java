@@ -1,8 +1,8 @@
 package com.order.Service;
 
 import com.order.enums.USER_ROLE;
-import com.order.module.User;
-import com.order.repository.UserRepository;
+import com.order.module.user.entity.User;
+import com.order.module.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

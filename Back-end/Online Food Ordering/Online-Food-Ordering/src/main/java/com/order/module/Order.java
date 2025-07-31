@@ -1,7 +1,7 @@
 package com.order.module;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.order.dto.RestaurantDTO;
+import com.order.module.user.entity.User;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
