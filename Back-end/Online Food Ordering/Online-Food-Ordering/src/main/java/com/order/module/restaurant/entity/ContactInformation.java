@@ -1,4 +1,4 @@
-package com.order.module;
+package com.order.module.restaurant.entity;
 
 import lombok.Builder;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package com.order.dto;
+package com.order.module.restaurant.dto;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;

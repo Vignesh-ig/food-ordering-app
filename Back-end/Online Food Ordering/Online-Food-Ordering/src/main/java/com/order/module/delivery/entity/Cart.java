@@ -1,4 +1,4 @@
-package com.order.module;
+package com.order.module.delivery.entity;
 
 import com.order.module.user.entity.User;
 import jakarta.persistence.*;

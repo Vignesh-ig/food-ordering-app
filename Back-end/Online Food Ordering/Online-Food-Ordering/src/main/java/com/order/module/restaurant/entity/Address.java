@@ -1,4 +1,4 @@
-package com.order.module;
+package com.order.module.restaurant.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

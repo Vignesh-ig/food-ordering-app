@@ -1,6 +1,8 @@
-package com.order.module;
+package com.order.module.restaurant.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.order.module.food.entity.Food;
+import com.order.module.delivery.entity.Order;
 import com.order.module.user.entity.User;
 import jakarta.persistence.*;
 import lombok.Builder;
