@@ -1,5 +1,6 @@
-package com.order.module;
+package com.order.module.food.entity;
 
+import com.order.module.restaurant.entity.Restaurant;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
