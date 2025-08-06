@@ -1,10 +1,10 @@
 package com.order.module.user.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.order.dto.RestaurantDTO;
+import com.order.module.restaurant.dto.RestaurantDTO;
 import com.order.enums.USER_ROLE;
-import com.order.module.Address;
-import com.order.module.Order;
+import com.order.module.restaurant.entity.Address;
+import com.order.module.delivery.entity.Order;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
