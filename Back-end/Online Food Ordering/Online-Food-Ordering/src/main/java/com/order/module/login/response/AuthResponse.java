@@ -1,4 +1,4 @@
-package com.order.response;
+package com.order.module.login.response;
 
 import com.order.enums.USER_ROLE;
 import lombok.Builder;

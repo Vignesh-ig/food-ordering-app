@@ -1,15 +1,16 @@
-package com.order.controller;
+package com.order.module.login.controller;
 
-import com.order.Service.CustomerUserDetailsService;
+import com.order.module.login.Service.CustomerUserDetailsService;
 import com.order.config.JwtProvider;
 import com.order.enums.USER_ROLE;
-import com.order.module.Cart;
+import com.order.module.delivery.entity.Cart;
 import com.order.module.user.entity.User;
-import com.order.repository.CartRepository;
+import com.order.module.delivery.repository.CartRepository;
 import com.order.module.user.repository.UserRepository;
-import com.order.request.SignInRequest;
-import com.order.request.SignUpRequest;
-import com.order.response.AuthResponse;
+import com.order.module.login.request.SignInRequest;
+import com.order.module.login.request.SignUpRequest;
+import com.order.module.login.response.AuthResponse;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -27,7 +28,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Collection;
 
-import static com.order.response.AuthResponse.buildAuthResponse;
+import static com.order.module.login.response.AuthResponse.buildAuthResponse;
 
 @RestController
 @RequestMapping("/auth")
@@ -41,7 +42,7 @@ public class AuthController {
     private final CartRepository cartRepository;
 
     @PostMapping("/signup")
-    public ResponseEntity<AuthResponse> createUserHandler(@RequestBody SignUpRequest request) throws Exception {
+    public ResponseEntity<AuthResponse> createUserHandler(@RequestBody @Valid SignUpRequest request) throws Exception {
 
         User isEmailExist = userRepository.findByEmail(request.email());
 
@@ -69,7 +70,7 @@ public class AuthController {
     }
 
     @PostMapping("/signin")
-    public ResponseEntity<AuthResponse> signin(@RequestBody SignInRequest request) {
+    public ResponseEntity<AuthResponse> signin(@RequestBody @Valid SignInRequest request) {
 
         String userName = request.email();
         String password = request.password();

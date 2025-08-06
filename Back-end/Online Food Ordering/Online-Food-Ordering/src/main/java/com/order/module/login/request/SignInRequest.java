@@ -1,4 +1,4 @@
-package com.order.request;
+package com.order.module.login.request;
 
 import com.order.Utils.RegexPattern;
 import jakarta.validation.constraints.Email;
